@@ -44,6 +44,7 @@
     -->
 
     <!-- Plugins -->
+<plugin name="Accelerometer" value="org.apache.cordova.AccelListener" />
 
     <!-- Core plugins -->
     <gap:plugin name="org.apache.cordova.battery-status" />
