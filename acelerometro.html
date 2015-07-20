@@ -23,6 +23,18 @@
               'Acceleration Y: ' + acceleration.y + '\n' +
               'Acceleration Z: ' + acceleration.z + '\n' +
               'Timestamp: '      + acceleration.timestamp + '\n');
+              
+              
+               var myDiv = document.getElementById('props');
+        myDiv.innerHTML =   'Device Name: '     + device.name     + '<br />' + 
+                            'Device PhoneGap: ' + device.phonegap + '<br />' + 
+                            'Device Platform: ' + device.platform + '<br />' + 
+                            'Device UUID: '     + device.uuid     + '<br />' + 
+                            'Device Version: '  + device.version  + '<br />';
+              
+              
+              
+              
     }
 
     // onError: Failed to get the acceleration
@@ -33,8 +45,9 @@
 
     </script>
   </head>
-  <body>
+  <body onload="onLoad()">
     <h1>Example</h1>
     <p>getCurrentAcceleration</p>
+    <p id="props">Aqui la propiedades de tu telefono...</p>
   </body>
 </html>
